@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto | RF Automation Studio</title>
+<link rel="stylesheet" href="styles.css">
+
+<meta name="description" content="Contacto para diagnóstico de automatización o desarrollo web. Conecta el formulario a n8n o usa WhatsApp.">
+<meta name="theme-color" content="#050b0d">
+<link rel="icon" href="assets/rf-logo.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="es" href="contacto.html">
+<link rel="alternate" hreflang="en" href="en/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contacto | RF Automation Studio">
+<meta property="og:description" content="Contacto para diagnóstico de automatización o desarrollo web. Conecta el formulario a n8n o usa WhatsApp.">
+<meta property="og:image" content="assets/hero-dashboard.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contacto | RF Automation Studio">
+<meta name="twitter:description" content="Contacto para diagnóstico de automatización o desarrollo web. Conecta el formulario a n8n o usa WhatsApp.">
+
+<link rel="stylesheet" href="assets/css/override-hero-spacing.css">
+
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<div class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html" aria-label="RF Automation Studio">
+      <div class="logo">
+        <img src="assets/logo-personal.png" alt="Logo RF" onerror="this.src='assets/rf-logo.svg'">
+      </div>
+      <div>
+        <div class="name" data-brand>RF Automation Studio</div>
+        <span class="sub">Automatización + Desarrollo Web</span>
+      </div>
+    </a>
+
+    <nav class="links" aria-label="Principal">
+      <a href="automatizacion.html">Automatización</a>
+      <a href="web.html">Desarrollo Web</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="en/index.html" aria-label="English">EN</a>
+    </nav>
+
+    
+
+<div class="cta">
+      <a data-wa href="https://wa.me/573118845113" target="_blank" rel="noopener">+57 311 884 5113</a>
+      <a class="btn primary" href="contacto.html">Agendar diagnóstico</a>
+      <button id="burger" aria-label="Menú" aria-expanded="false">☰</button>
+    </div>
+  </div>
+  <div id="mobileMenu">
+    <div class="container mm">
+      <a href="automatizacion.html">Automatización</a>
+      <a href="web.html">Desarrollo Web</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="en/index.html">English</a>
+    </div>
+  </div>
+</div>
+
+
+<header class="hero hero--page">
+  <div class="container">
+    <div class="hero-top">
+      <div class="kicker"><span class="dot"></span>Diagnóstico · Alcance · Roadmap</div>
+      <h1>Hablemos: diagnóstico y plan de acción</h1>
+      <p class="lead">Cuéntame tu proceso y tus dolores. Te propongo un plan claro con alcance, tiempos, riesgos y entregables medibles.</p>
+    </div>
+
+    <div class="hero-bottom">
+      <div class="hero-actions">
+        <div class="hero-ctas">
+<a class="btn btn-primary" href="https://wa.me/573118845113" target="_blank" rel="noopener">WhatsApp</a>
+<a class="btn btn-ghost" href="index.html">Volver al inicio</a>
+<a class="btn btn-ghost" href="#form">Ir al formulario</a>
+</div>
+
+        <div class="hero-card">
+          <h3>Qué obtienes</h3>
+          <p>Un diagnóstico honesto y un plan ejecutable: quick wins + roadmap 30/60/90.</p>
+          <div class="chips"><span class="chip">Propuesta clara</span><span class="chip">Estimación real</span><span class="chip">Riesgos/KPIs</span><span class="chip">Siguientes pasos</span></div>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <img src="assets/img/evidencia_kpis.png" alt="Evidencia, control y KPIs" loading="eager" />
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Contacto</h2>
+      <p>Cuéntame tu caso. Si ya tienes n8n, conecto el webhook; si no, lo diseñamos desde cero.</p>
+    </div>
+
+    <form class="form" data-rf-webhook data-success="gracias.html" method="POST" action="gracias.html">
+      <div class="form-grid">
+        <div><input name="nombre" placeholder="Nombre" required></div>
+        <div><input name="email" placeholder="Correo" type="email" required></div>
+        <div><input name="empresa" placeholder="Empresa / Proyecto"></div>
+        <div>
+          <select name="interes">
+            <option value="Automatización">Automatización (n8n)</option>
+            <option value="Desarrollo Web">Desarrollo Web</option>
+            <option value="Ambos">Ambos</option>
+          </select>
+        </div>
+      </div>
+      <div style="margin-top:12px">
+        <textarea name="mensaje" placeholder="Describe el proceso, el dolor y qué esperas medir (KPIs)."></textarea>
+      </div>
+      <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:12px">
+        <button class="btn primary" type="submit">Enviar</button>
+        <a data-wa href="https://wa.me/573118845113" target="_blank" rel="noopener">+57 311 884 5113</a>
+      </div>
+      <div class="help">Si no configuras el webhook en <b>config.js</b>, el formulario funcionará como envío básico.</div>
+    </form>
+  </div>
+</section>
+
+
+<div class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div style="font-weight:900;margin-bottom:6px" data-brand>RF Automation Studio</div>
+      <div style="color:var(--muted);max-width:62ch">
+        Automatización empresarial con evidencia (n8n + PostgreSQL) y desarrollo web moderno orientado a resultados.
+      </div>
+      <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+        <span class="pill">Arquitectura</span>
+        <span class="pill">Trazabilidad</span>
+        <span class="pill">KPIs</span>
+        <span class="pill">Escalabilidad</span>
+      </div>
+    </div>
+    <div>
+      <div style="font-weight:800;margin-bottom:8px">Servicios</div>
+      <div style="display:grid;gap:8px">
+        <a href="automatizacion.html">Automatización RF01–RF04</a>
+        <a href="web.html">Desarrollo Web</a>
+      </div>
+    </div>
+    <div>
+      <div style="font-weight:800;margin-bottom:8px">Contacto</div>
+      <div style="display:grid;gap:8px">
+        <a data-email href="mailto:rarf_88@hotmail.com">rarf_88@hotmail.com</a>
+        <a data-wa href="https://wa.me/573118845113" target="_blank" rel="noopener">+57 311 884 5113</a>
+        <a href="contacto.html">Formulario</a>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="margin-top:22px;color:var(--muted2);text-align:center">
+    © 2025 <span data-brand>RF Automation Studio</span> · Colombia
+  </div>
+</div>
+<div id="toast"><div class="t"><b>Mensaje</b><span>Detalle</span></div></div>
+<script src="config.js"></script>
+<script src="main.js" defer></script>
+
+</body>
+</html>

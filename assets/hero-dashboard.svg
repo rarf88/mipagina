@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#19c4c6" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#47f2a1" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="rgba(25,196,198,0.25)"/>
+      <stop offset="1" stop-color="rgba(25,196,198,0)"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <circle cx="320" cy="220" r="170" fill="url(#g1)" filter="url(#soft)"/>
+  <circle cx="1120" cy="260" r="240" fill="url(#g1)" filter="url(#soft)" opacity="0.75"/>
+  <circle cx="760" cy="800" r="300" fill="url(#g1)" filter="url(#soft)" opacity="0.55"/>
+
+  <g transform="translate(120,120)">
+    <rect x="0" y="0" rx="28" ry="28" width="1160" height="640" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.18)"/>
+    <rect x="0" y="0" rx="28" ry="28" width="1160" height="64" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.10)"/>
+    <circle cx="32" cy="32" r="7" fill="#ff5f57"/>
+    <circle cx="56" cy="32" r="7" fill="#febc2e"/>
+    <circle cx="80" cy="32" r="7" fill="#28c840"/>
+    <text x="118" y="40" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-weight="700" font-size="16" fill="rgba(232,241,243,0.92)">Ops & Evidence Console</text>
+
+    <!-- Left column -->
+    <g transform="translate(26,92)">
+      <rect x="0" y="0" rx="18" width="330" height="180" fill="rgba(4,10,12,0.35)" stroke="rgba(255,255,255,0.12)"/>
+      <text x="18" y="36" font-family="Inter, system-ui" font-size="12" fill="rgba(232,241,243,0.65)">RF04 • SLA Monitoring</text>
+      <text x="18" y="78" font-family="Inter, system-ui" font-weight="900" font-size="30" fill="rgba(232,241,243,0.92)">EN RIESGO</text>
+      <rect x="18" y="96" rx="10" width="294" height="12" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.10)"/>
+      <rect x="18" y="96" rx="10" width="210" height="12" fill="url(#g1)"/>
+      <text x="18" y="132" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas" font-size="12" fill="rgba(232,241,243,0.65)">pct_sla: 71.4% • anti-spam: OK</text>
+      <text x="18" y="154" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas" font-size="12" fill="rgba(232,241,243,0.65)">eventos_rf: +6 hoy (evidencia)</text>
+
+      <rect x="0" y="200" rx="18" width="330" height="180" fill="rgba(4,10,12,0.35)" stroke="rgba(255,255,255,0.12)"/>
+      <text x="18" y="236" font-family="Inter, system-ui" font-size="12" fill="rgba(232,241,243,0.65)">RF01 • Inventario Crítico</text>
+      <text x="18" y="278" font-family="Inter, system-ui" font-weight="900" font-size="34" fill="rgba(232,241,243,0.92)">7</text>
+      <text x="62" y="278" font-family="Inter, system-ui" font-size="14" fill="rgba(232,241,243,0.72)">ítems bajo stock mínimo</text>
+      <rect x="18" y="296" rx="10" width="294" height="12" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.10)"/>
+      <rect x="18" y="296" rx="10" width="96" height="12" fill="url(#g1)"/>
+      <text x="18" y="332" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas" font-size="12" fill="rgba(232,241,243,0.65)">tiempo ejecución: 00:00:08</text>
+      <text x="18" y="354" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas" font-size="12" fill="rgba(232,241,243,0.65)">ejecuciones_rf: 4 hoy</text>
+
+      <rect x="0" y="400" rx="18" width="330" height="136" fill="rgba(4,10,12,0.35)" stroke="rgba(255,255,255,0.12)"/>
+      <text x="18" y="438" font-family="Inter, system-ui" font-size="12" fill="rgba(232,241,243,0.65)">Capa de Evidencia</text>
+      <text x="18" y="466" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas" font-size="12" fill="rgba(232,241,243,0.72)">ejecuciones_rf • eventos_rf • logs</text>
+      <text x="18" y="492" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas" font-size="12" fill="rgba(232,241,243,0.62)">auditoría • mejora continua</text>
+    </g>
+
+    <!-- Right column -->
+    <g transform="translate(380,92)">
+      <rect x="0" y="0" rx="18" width="754" height="290" fill="rgba(4,10,12,0.35)" stroke="rgba(255,255,255,0.12)"/>
+      <text x="18" y="36" font-family="Inter, system-ui" font-size="12" fill="rgba(232,241,243,0.65)">Ejecuciones (últimos 7 días)</text>
+      <path d="M18,230 L120,210 L222,214 L324,188 L426,196 L528,160 L630,172 L732,132" fill="none" stroke="url(#g1)" stroke-width="5" stroke-linecap="round"/>
+      <path d="M18,230 L120,210 L222,214 L324,188 L426,196 L528,160 L630,172 L732,132 L732,260 L18,260 Z" fill="url(#g2)" opacity="0.95"/>
+      <g transform="translate(18,256)">
+        <circle cx="8" cy="-8" r="5" fill="#19c4c6"/>
+        <text x="20" y="-4" font-family="Inter, system-ui" font-size="12" fill="rgba(232,241,243,0.65)">automatizaciones</text>
+      </g>
+
+      <g transform="translate(0,314)">
+        <rect x="0" y="0" rx="18" width="368" height="222" fill="rgba(4,10,12,0.35)" stroke="rgba(255,255,255,0.12)"/>
+        <text x="18" y="36" font-family="Inter, system-ui" font-size="12" fill="rgba(232,241,243,0.65)">RF02 • Cartera Preventiva</text>
+        <text x="18" y="82" font-family="Inter, system-ui" font-weight="900" font-size="34" fill="rgba(232,241,243,0.92)">12</text>
+        <text x="70" y="82" font-family="Inter, system-ui" font-size="14" fill="rgba(232,241,243,0.72)">facturas vencidas</text>
+        <text x="18" y="118" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas" font-size="12" fill="rgba(232,241,243,0.65)">alertas: 9 • evidencia: OK</text>
+        <text x="18" y="144" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas" font-size="12" fill="rgba(232,241,243,0.62)">segmentación: 7 días</text>
+
+        <rect x="386" y="0" rx="18" width="368" height="222" fill="rgba(4,10,12,0.35)" stroke="rgba(255,255,255,0.12)"/>
+        <text x="404" y="36" font-family="Inter, system-ui" font-size="12" fill="rgba(232,241,243,0.65)">RF03 • Marketing por Rotación</text>
+        <text x="404" y="82" font-family="Inter, system-ui" font-weight="900" font-size="34" fill="rgba(232,241,243,0.92)">5</text>
+        <text x="442" y="82" font-family="Inter, system-ui" font-size="14" fill="rgba(232,241,243,0.72)">campañas</text>
+        <text x="404" y="118" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas" font-size="12" fill="rgba(232,241,243,0.65)">anti-repetición: OK</text>
+        <text x="404" y="144" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas" font-size="12" fill="rgba(232,241,243,0.62)">segmentos: lento / nunca</text>
+      </g>
+    </g>
+  </g>
+
+  <text x="120" y="846" font-family="Inter, system-ui" font-size="12" fill="rgba(232,241,243,0.55)">Visual creado para RF Automation Studio • estilo enterprise dashboard</text>
+</svg>

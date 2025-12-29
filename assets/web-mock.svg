@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#19c4c6" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#47f2a1" stop-opacity="0.75"/>
+    </linearGradient>
+    <filter id="b" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <circle cx="280" cy="180" r="160" fill="url(#g)" filter="url(#b)"/>
+  <circle cx="980" cy="240" r="220" fill="url(#g)" filter="url(#b)" opacity="0.8"/>
+  <g transform="translate(120,120)">
+    <rect x="0" y="0" rx="28" width="960" height="520" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.18)"/>
+    <rect x="0" y="0" rx="28" width="960" height="64" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.10)"/>
+    <circle cx="32" cy="32" r="7" fill="#ff5f57"/>
+    <circle cx="56" cy="32" r="7" fill="#febc2e"/>
+    <circle cx="80" cy="32" r="7" fill="#28c840"/>
+    <text x="118" y="40" font-family="Inter, system-ui" font-weight="700" font-size="16" fill="rgba(232,241,243,0.92)">Corporate Website • Preview</text>
+
+    <rect x="26" y="96" rx="18" width="320" height="160" fill="rgba(4,10,12,0.35)" stroke="rgba(255,255,255,0.12)"/>
+    <rect x="366" y="96" rx="18" width="568" height="48" fill="rgba(4,10,12,0.35)" stroke="rgba(255,255,255,0.12)"/>
+    <rect x="366" y="160" rx="18" width="568" height="96" fill="rgba(4,10,12,0.35)" stroke="rgba(255,255,255,0.12)"/>
+    <rect x="26" y="276" rx="18" width="908" height="88" fill="rgba(4,10,12,0.35)" stroke="rgba(255,255,255,0.12)"/>
+    <rect x="26" y="382" rx="18" width="292" height="112" fill="rgba(4,10,12,0.35)" stroke="rgba(255,255,255,0.12)"/>
+    <rect x="336" y="382" rx="18" width="292" height="112" fill="rgba(4,10,12,0.35)" stroke="rgba(255,255,255,0.12)"/>
+    <rect x="642" y="382" rx="18" width="292" height="112" fill="rgba(4,10,12,0.35)" stroke="rgba(255,255,255,0.12)"/>
+
+    <text x="52" y="142" font-family="Inter, system-ui" font-size="12" fill="rgba(232,241,243,0.65)">Hero visual</text>
+    <text x="392" y="126" font-family="Inter, system-ui" font-size="12" fill="rgba(232,241,243,0.65)">Navigation</text>
+    <text x="392" y="202" font-family="Inter, system-ui" font-size="12" fill="rgba(232,241,243,0.65)">Value proposition</text>
+    <text x="52" y="330" font-family="Inter, system-ui" font-size="12" fill="rgba(232,241,243,0.65)">Social proof / results</text>
+  </g>
+</svg>

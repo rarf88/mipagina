@@ -1,0 +1,9 @@
+
+/* HERO spacing fix - global */
+.hero {
+  padding-top: clamp(72px, 10vh, 120px) !important;
+}
+.hero .hero-content,
+.hero .hero-inner {
+  margin-top: 0 !important;
+}
