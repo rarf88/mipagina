@@ -202,14 +202,3 @@ document.addEventListener('DOMContentLoaded',()=>{
 
   initNav(); initReveal(); initCounters(); initTabs(); initCopy(); initForms();
 });
-
-// ==== MOBILE MENU (robust) ====
-document.addEventListener('DOMContentLoaded', ()=>{
-  const btn = document.querySelector('#hamburgerBtn, .hamburger, [data-burger]');
-  const menu = document.querySelector('#navMenu, #mobileMenu, .nav-menu, .mobile-menu');
-  if(!btn || !menu) return;
-  btn.addEventListener('click', ()=>{
-    menu.classList.toggle('open');
-    menu.style.display = menu.classList.contains('open') ? 'block' : '';
-  });
-});

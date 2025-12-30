@@ -275,76 +275,14 @@ textarea{min-height:140px;resize:vertical}
 }
 
 
-/* ==== FIX: Brand hierarchy on mobile/tablet (logo > text) ==== */
+/* ===== FINAL FIX: MOBILE/TABLET HEADER BRAND ===== */
 @media (max-width: 1024px){
-  /* Logo image */
-  .brand img,
-  .logo img,
-  .site-logo img,
-  .navbar-brand img,
-  header .brand img{
-    height: 56px !important;
-    width: auto !important;
-    max-height: 56px !important;
-  }
-  /* If logo is svg or set on container */
-  .brand svg,
-  .logo svg,
-  .site-logo svg{
-    height: 56px !important;
-    width: auto !important;
-  }
-  /* Brand text smaller */
-  .brand .brand-text,
-  .brand .name,
-  .logo .brand-text,
-  .navbar-brand .brand-text,
-  header .brand-text,
-  header .brand-name,
-  header .brand-subtitle,
-  header .brand-sub{
-    font-size: 12px !important;
-    line-height: 1.15 !important;
-  }
-  .brand .brand-sub,
-  .brand .subtitle,
-  header .brand-sub,
-  header .brand-subtitle{
-    font-size: 10px !important;
-    opacity: .75 !important;
-  }
+  header img{height:64px !important;width:auto !important;}
+  header .brand-name, header .brand-text strong{font-size:12px !important;}
+  header .brand-sub, header .brand-text span{font-size:10px !important;opacity:.7;}
 }
-
-/* Even smaller on phones */
-@media (max-width: 560px){
-  .brand img,
-  .logo img,
-  .site-logo img,
-  .navbar-brand img,
-  header .brand img{
-    height: 48px !important;
-    max-height: 48px !important;
-  }
-  .brand .brand-text,
-  header .brand-text,
-  header .brand-name{
-    font-size: 11px !important;
-  }
-  .brand .brand-sub,
-  header .brand-sub{
-    font-size: 9.5px !important;
-  }
+@media (max-width: 600px){
+  header img{height:52px !important;}
+  header .brand-name, header .brand-text strong{font-size:11px !important;}
+  header .brand-sub, header .brand-text span{font-size:9px !important;}
 }
-
-
-/* ==== FIX: Hero vertical spacing (remove extra gaps) ==== */
-body{margin:0;padding:0;}
-/* Ensure header sticks to top without extra whitespace */
-header, .nav, .navbar, .site-header{margin-top:0 !important; padding-top:0 !important;}
-/* Hero block spacing */
-.hero{padding-top: 28px !important; padding-bottom: 28px !important;}
-.hero .hero-inner, .hero .container, .hero .hero-grid{margin-top:0 !important;}
-
-
-/* ==== MOBILE MENU open state ==== */
-.nav-menu.open, .mobile-menu.open{display:block !important;}
