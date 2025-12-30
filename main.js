@@ -173,8 +173,7 @@ function initForms(){
         const subject = encodeURIComponent(isEn ? "Contact — RF Automation Studio" : "Contacto — RF Automation Studio");
         const lines = [];
         fd.forEach((v,k)=>{ if(k!=="ua") lines.push(`${k}: ${v}`); });
-        const body = encodeURIComponent(lines.join("
-"));
+        const body = encodeURIComponent(lines.join("\n"));
         window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
         showToast(isEn ? "Email draft opened" : "Se abrió tu correo", isEn ? "Configure the webhook to send automatically" : "Configura el webhook para envío automático");
         return;

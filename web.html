@@ -19,49 +19,16 @@
 <meta name="twitter:title" content="Desarrollo Web | RF Automation Studio">
 <meta name="twitter:description" content="Desarrollo web moderno, rápido y responsivo, con SEO técnico e integración con automatización para captación y seguimiento de leads.">
 
-<link rel="stylesheet" href="assets/css/override-hero-spacing.css">
-
-
-<style>
-.site-header{position:sticky;top:0;z-index:999;background:#0b0f14}
-.nav-container{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:16px}
-.logo{font-weight:700;color:#fff}
-.nav-menu{display:flex;gap:24px}
-.nav-menu a{color:#fff;text-decoration:none;font-size:16px}
-.hamburger{display:none;background:none;border:0;cursor:pointer}
-.hamburger span{display:block;width:26px;height:3px;margin:5px 0;background:#fff}
-@media(max-width:992px){
-  .nav-menu{
-    position:fixed;top:70px;left:0;right:0;
-    background:#0b0f14;
-    flex-direction:column;
-    padding:24px;
-    display:none;
-  }
-  .nav-menu.open{display:flex}
-  .hamburger{display:block}
-}
-</style>
 </head>
 <body>
-<header class="site-header">
-  <div class="nav-container">
-    <div class="logo">RF Automation Studio</div>
-    <nav class="nav-menu" id="navMenu">
-      <a href="index.html">Inicio</a>
-      <a href="automatizacion.html">Automatización</a>
-      <a href="web.html">Desarrollo Web</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-    <button class="hamburger" id="hamburgerBtn">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-
 <a class="skip" href="#main">Saltar al contenido</a>
 
-
+<div class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html" aria-label="RF Automation Studio">
+      <div class="logo">
+        <img src="assets/logo-personal.png" alt="Logo RF" onerror="this.src='assets/rf-logo.svg'">
+      </div>
       <div>
         <div class="name" data-brand>RF Automation Studio</div>
         <span class="sub">Automatización + Desarrollo Web</span>
@@ -93,7 +60,34 @@
 
 
 <main id="main">
-
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="kicker"><span class="dot"></span> Web que convierte · rendimiento · SEO</div>
+      <h1>Web moderna que guía al usuario y conecta con automatización</h1>
+      <p class="lead">
+        Sitios claros, rápidos y responsivos. No solo “bonitos”: estructura, SEO técnico y conexión con procesos para medir resultados.
+      </p>
+      <div class="cta" style="margin-top:18px">
+        <a class="btn primary" href="contacto.html">Cotizar proyecto</a>
+        <a class="btn" href="automatizacion.html">Ver automatización</a>
+      </div>
+      <div class="hero-card" style="margin-top:18px">
+        <div class="pad">
+          <div style="font-weight:900">Lo diferencial</div>
+          <div style="color:var(--muted);margin-top:6px">La web captura leads y la automatización los atiende: asignación, seguimiento y evidencia.</div>
+          <div class="mini">
+            <span class="pill">Performance</span>
+            <span class="pill">SEO técnico</span>
+            <span class="pill">Responsive real</span>
+            <span class="pill">Integración n8n</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-card"><img src="assets/img/auditoria.png" alt="Mockup web"></div>
+  </div>
+</header>
 
 <section class="section alt">
   <div class="container">
@@ -166,16 +160,5 @@
 <script src="config.js"></script>
 <script src="main.js" defer></script>
 
-
-<script>
-document.addEventListener("DOMContentLoaded",function(){
-  var btn=document.getElementById("hamburgerBtn");
-  var menu=document.getElementById("navMenu");
-  if(!btn||!menu)return;
-  btn.addEventListener("click",function(){
-    menu.classList.toggle("open");
-  });
-});
-</script>
 </body>
 </html>
