@@ -23,25 +23,45 @@
 
 
 <style>
+.site-header{position:sticky;top:0;z-index:999;background:#0b0f14}
+.nav-container{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:16px}
+.logo{font-weight:700;color:#fff}
+.nav-menu{display:flex;gap:24px}
+.nav-menu a{color:#fff;text-decoration:none;font-size:16px}
 .hamburger{display:none;background:none;border:0;cursor:pointer}
 .hamburger span{display:block;width:26px;height:3px;margin:5px 0;background:#fff}
 @media(max-width:992px){
+  .nav-menu{
+    position:fixed;top:70px;left:0;right:0;
+    background:#0b0f14;
+    flex-direction:column;
+    padding:24px;
+    display:none;
+  }
+  .nav-menu.open{display:flex}
   .hamburger{display:block}
-  .nav-links{display:none;position:fixed;top:70px;left:0;right:0;
-    background:#0b0f14;padding:24px;flex-direction:column;gap:16px;z-index:9999}
-  .nav-links.open{display:flex}
 }
 </style>
 </head>
 <body>
+<header class="site-header">
+  <div class="nav-container">
+    <div class="logo">RF Automation Studio</div>
+    <nav class="nav-menu" id="navMenu">
+      <a href="index.html">Inicio</a>
+      <a href="automatizacion.html">Automatización</a>
+      <a href="web.html">Desarrollo Web</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
 <a class="skip" href="#main">Skip to content</a>
 
-<div class="nav">
-  <div class="container nav-inner">
-    <a class="brand" href="index.html" aria-label="RF Automation Studio">
-      <div class="logo">
-        <img src="../assets/logo-personal.png" alt="RF logo" onerror="this.src='../assets/rf-logo.svg'">
-      </div>
+
       <div>
         <div class="name" data-brand>RF Automation Studio</div>
         <span class="sub">Automation + Web Development</span>
@@ -73,35 +93,7 @@
 
 
 <main id="main">
-<header class="hero hero--page">
-  <div class="container">
-    <div class="hero-top">
-      <div class="kicker"><span class="dot"></span>Web · Performance · SEO · Conversion</div>
-      <h1>Professional web development that converts</h1>
-      <p class="lead">Fast, clear, sales‑ready sites: structure, copy, UX, technical SEO and analytics. Your website should explain what you do in 10 seconds.</p>
-    </div>
 
-    <div class="hero-bottom">
-      <div class="hero-actions">
-        <div class="hero-ctas">
-<a class="btn btn-primary" href="contact.html">Book a diagnosis</a>
-<a class="btn btn-ghost" href="index.html">Back to home</a>
-<a class="btn btn-ghost" href="automation.html">See automation</a>
-</div>
-
-        <div class="hero-card">
-          <h3>What’s different</h3>
-          <p>Design + development with a commercial mindset: speed, clarity and measurable outcomes.</p>
-          <div class="chips"><span class="chip">Truly responsive</span><span class="chip">Technical SEO</span><span class="chip">Analytics/Events</span><span class="chip">Accessible</span></div>
-        </div>
-      </div>
-
-      <div class="hero-media">
-        <img src="../assets/img/desarrollo_web.png" alt="Professional web development" loading="eager" />
-      </div>
-    </div>
-  </div>
-</header>
 
 <section class="section alt">
   <div class="container">
@@ -177,11 +169,11 @@
 
 <script>
 document.addEventListener("DOMContentLoaded",function(){
-  var btn=document.getElementById("hamburger");
-  var nav=document.querySelector(".nav-links");
-  if(!btn||!nav)return;
+  var btn=document.getElementById("hamburgerBtn");
+  var menu=document.getElementById("navMenu");
+  if(!btn||!menu)return;
   btn.addEventListener("click",function(){
-    nav.classList.toggle("open");
+    menu.classList.toggle("open");
   });
 });
 </script>
