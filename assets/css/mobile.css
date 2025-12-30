@@ -1,16 +1,30 @@
 
-@media(max-width:992px){
+.hamburger{
+  display:none;
+  background:none;
+  border:0;
+  cursor:pointer;
+}
+.hamburger span{
+  display:block;
+  width:26px;
+  height:3px;
+  margin:5px 0;
+  background:#ffffff;
+}
+@media (max-width: 992px){
   .hamburger{display:block;}
   .nav-links{
     display:none;
     position:fixed;
-    top:72px;
-    left:0; right:0;
+    top:70px;
+    left:0;
+    right:0;
     background:#0b0f14;
     padding:24px;
     flex-direction:column;
     gap:16px;
-    z-index:999;
+    z-index:9999;
   }
   .nav-links.open{display:flex;}
 }
