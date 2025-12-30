@@ -256,3 +256,20 @@ textarea{min-height:140px;resize:vertical}
 .skip:focus{left:10px}
 
 .hero-card img,.media img{width:100%;height:auto;display:block}
+
+/* --- Hero layout (centered title + split content) --- */
+.hero--split{padding-top:96px;padding-bottom:56px}
+.hero--split .hero-top{max-width:980px;margin:0 auto 28px;text-align:center}
+.hero--split .hero-top .kicker{justify-content:center}
+.hero--split .hero-top h1{margin:10px 0 10px}
+.hero--split .hero-top .lead{margin:0 auto}
+.hero--split .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:32px;align-items:stretch}
+.hero--split .hero-left{display:flex;flex-direction:column;gap:18px}
+.hero--split .hero-right .hero-card{height:100%}
+.hero--split .hero-right img{width:100%;height:auto;display:block}
+
+@media (max-width: 900px){
+  .hero--split{padding-top:88px}
+  .hero--split .hero-grid{grid-template-columns:1fr}
+  .hero--split .hero-top{margin-bottom:18px}
+}

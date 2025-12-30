@@ -28,7 +28,7 @@
     <!-- Left column -->
     <g transform="translate(26,92)">
       <rect x="0" y="0" rx="18" width="330" height="180" fill="rgba(4,10,12,0.35)" stroke="rgba(255,255,255,0.12)"/>
-      <text x="18" y="36" font-family="Inter, system-ui" font-size="12" fill="rgba(232,241,243,0.65)">RF04 • SLA Monitoring</text>
+      <text x="18" y="36" font-family="Inter, system-ui" font-size="12" fill="rgba(232,241,243,0.65)">Sales &amp; SLA</text>
       <text x="18" y="78" font-family="Inter, system-ui" font-weight="900" font-size="30" fill="rgba(232,241,243,0.92)">EN RIESGO</text>
       <rect x="18" y="96" rx="10" width="294" height="12" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.10)"/>
       <rect x="18" y="96" rx="10" width="210" height="12" fill="url(#g1)"/>
@@ -36,7 +36,7 @@
       <text x="18" y="154" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas" font-size="12" fill="rgba(232,241,243,0.65)">eventos_rf: +6 hoy (evidencia)</text>
 
       <rect x="0" y="200" rx="18" width="330" height="180" fill="rgba(4,10,12,0.35)" stroke="rgba(255,255,255,0.12)"/>
-      <text x="18" y="236" font-family="Inter, system-ui" font-size="12" fill="rgba(232,241,243,0.65)">RF01 • Inventario Crítico</text>
+      <text x="18" y="236" font-family="Inter, system-ui" font-size="12" fill="rgba(232,241,243,0.65)">Inventario inteligente</text>
       <text x="18" y="278" font-family="Inter, system-ui" font-weight="900" font-size="34" fill="rgba(232,241,243,0.92)">7</text>
       <text x="62" y="278" font-family="Inter, system-ui" font-size="14" fill="rgba(232,241,243,0.72)">ítems bajo stock mínimo</text>
       <rect x="18" y="296" rx="10" width="294" height="12" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.10)"/>
@@ -63,14 +63,14 @@
 
       <g transform="translate(0,314)">
         <rect x="0" y="0" rx="18" width="368" height="222" fill="rgba(4,10,12,0.35)" stroke="rgba(255,255,255,0.12)"/>
-        <text x="18" y="36" font-family="Inter, system-ui" font-size="12" fill="rgba(232,241,243,0.65)">RF02 • Cartera Preventiva</text>
+        <text x="18" y="36" font-family="Inter, system-ui" font-size="12" fill="rgba(232,241,243,0.65)">Cartera y recaudo</text>
         <text x="18" y="82" font-family="Inter, system-ui" font-weight="900" font-size="34" fill="rgba(232,241,243,0.92)">12</text>
         <text x="70" y="82" font-family="Inter, system-ui" font-size="14" fill="rgba(232,241,243,0.72)">facturas vencidas</text>
         <text x="18" y="118" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas" font-size="12" fill="rgba(232,241,243,0.65)">alertas: 9 • evidencia: OK</text>
         <text x="18" y="144" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas" font-size="12" fill="rgba(232,241,243,0.62)">segmentación: 7 días</text>
 
         <rect x="386" y="0" rx="18" width="368" height="222" fill="rgba(4,10,12,0.35)" stroke="rgba(255,255,255,0.12)"/>
-        <text x="404" y="36" font-family="Inter, system-ui" font-size="12" fill="rgba(232,241,243,0.65)">RF03 • Marketing por Rotación</text>
+        <text x="404" y="36" font-family="Inter, system-ui" font-size="12" fill="rgba(232,241,243,0.65)">Marketing y leads</text>
         <text x="404" y="82" font-family="Inter, system-ui" font-weight="900" font-size="34" fill="rgba(232,241,243,0.92)">5</text>
         <text x="442" y="82" font-family="Inter, system-ui" font-size="14" fill="rgba(232,241,243,0.72)">campañas</text>
         <text x="404" y="118" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas" font-size="12" fill="rgba(232,241,243,0.65)">anti-repetición: OK</text>

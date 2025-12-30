@@ -74,26 +74,28 @@ function sparkline(points){
   </svg>`;
 }
 
+// IDs internos (rf01-rf04) se conservan para no romper la lógica;
+// nombres visibles se vuelven comerciales y entendibles para clientes.
 const rfData={
-  rf01:{titleEs:"RF01 • Inventario crítico",titleEn:"RF01 • Critical inventory",metrics:[
+  rf01:{titleEs:"Inventario inteligente",titleEn:"Smart inventory",metrics:[
     {k:"Ítems críticos",v:"7",s:"bajo stock mínimo"},
     {k:"Alertas hoy",v:"18",s:"eventos_rf (evidencia)"},
     {k:"Tiempo a aviso",v:"< 10 min",s:"ejecución → notificación"},
     {k:"Antispam",v:"OK",s:"deduplicación por lote"},
   ],spark:[6,7,6,8,7,7,6,7]},
-  rf02:{titleEs:"RF02 • Cartera preventiva",titleEn:"RF02 • Accounts receivable",metrics:[
+  rf02:{titleEs:"Cartera y recaudo",titleEn:"Accounts receivable",metrics:[
     {k:"Vencidas",v:"12",s:"clasificación automática"},
     {k:"Por vencer",v:"21",s:"ventana 7 días"},
     {k:"Notifs",v:"9",s:"con evidencia (payload)"},
     {k:"Seguimiento",v:"OK",s:"estado por cliente"},
   ],spark:[18,16,14,13,12,12,11,12]},
-  rf03:{titleEs:"RF03 • Marketing por rotación",titleEn:"RF03 • Rotation marketing",metrics:[
+  rf03:{titleEs:"Marketing y leads",titleEn:"Marketing & leads",metrics:[
     {k:"Nunca vendidos",v:"4",s:"detección histórica"},
     {k:"Rotación lenta",v:"9",s:"umbral configurable"},
     {k:"Campañas",v:"5",s:"segmentación por tipo"},
     {k:"Anti-repetición",v:"OK",s:"registro envíos"},
   ],spark:[3,3,4,4,5,5,4,5]},
-  rf04:{titleEs:"RF04 • Seguimiento de SLA",titleEn:"RF04 • SLA monitoring",metrics:[
+  rf04:{titleEs:"Ventas y SLA",titleEn:"Sales & SLA",metrics:[
     {k:"Ventas activas",v:"26",s:"evaluadas por cron"},
     {k:"En riesgo",v:"6",s:"≥ 70% consumo SLA"},
     {k:"Críticas",v:"2",s:"≥ 90% consumo SLA"},
