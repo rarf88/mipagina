@@ -1,0 +1,16 @@
+
+@media(max-width:992px){
+  .hamburger{display:block;}
+  .nav-links{
+    display:none;
+    position:fixed;
+    top:72px;
+    left:0; right:0;
+    background:#0b0f14;
+    padding:24px;
+    flex-direction:column;
+    gap:16px;
+    z-index:999;
+  }
+  .nav-links.open{display:flex;}
+}
