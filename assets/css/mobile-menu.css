@@ -1,6 +1,8 @@
 
 @media (max-width: 992px){
-  .hamburger{display:block;cursor:pointer}
-  .nav-links{display:none;flex-direction:column}
-  .nav-links.open{display:flex}
+  .hamburger, .menu-toggle{display:block;cursor:pointer}
+  nav ul, .nav-links, .navbar-menu{display:none}
+  body.menu-open nav ul,
+  body.menu-open .nav-links,
+  body.menu-open .navbar-menu{display:flex;flex-direction:column}
 }
